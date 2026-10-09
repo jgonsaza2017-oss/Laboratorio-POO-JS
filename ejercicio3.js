@@ -3,15 +3,15 @@
 function Estudiante(nombre, curso, nota) {
     this.nombre = nombre;
     this.curso = curso;
-    this.curso = nota;
+    this.nota = nota;
 
-    this.aprobado = this.nota =3.0;
+    this.aprobado = this.nota >=3.0;
 
     this.mostrarResultado = function() {
         if (this.aprobado) {
-            return `El/la estudiante ${this.nombre}  aprobado el curso de ${this.curso} con una nota de ${this.nota}.`;
+            return `El/la estudiante ${this.nombre} ha aprobado el curso de ${this.curso} con una nota de ${this.nota}.`;
            } else {
-            return `El/la estudiante ${this.nombre}  aprobado el curso de ${this.curso} con una nota de ${this.nota}.`;
+            return `El/la estudiante ${this.nombre} NO ha aprobado el curso de ${this.curso} con una nota de ${this.nota}.`;
         }
     }
 }
